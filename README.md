@@ -8,6 +8,7 @@ P3	13	19
 P4	26	42
 
 Develop a scheduler which submits the processes to the processor in the defined scenario, and compute the scheduler performance by providing the waiting time for process, turnaround time for process and average waiting time and turnaround time.
+//solution
 #include<stdio.h> 
 #include<conio.h>
 
@@ -48,9 +49,7 @@ int main()
         { 
             remt[P_no] -= time_quan; 
             CurT += time_quan;
-        }
-
-        
+        } 
 
 if(remt[P_no] == 0 && indicator == 1)           
        
@@ -127,7 +126,6 @@ w_time[i] = Cur_t - arT[i] - btime[i];
         P_no[i] = P_no[loc];
         P_no[loc] = temp;
     }
-    
     for(i = 1; i < n; i++)
     {
         for(j = 0; j < i ;j++){
